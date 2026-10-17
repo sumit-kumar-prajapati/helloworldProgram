@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hello world
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <title>Big Billion Store demo</title>
+       <style>
+        body{
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Free-HD-Wallpapers-1920x1200-Desktop-Download.jpg) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+span{
+    position: relative;
+    font-family: "Lato", sans-serif;
+    top: 100px;
+    color: yellow;
+    display: inline-block;
+    font-size: 5rem;
+    text-shadow: 0 1px 0 #b7b7b7 , 0 2px 0
+    #b7b7b7 , 0 3px 0 #b7b7b7,
+    0 4px 0 #b7b7b7, 0 5px 0 #b7b7b7,
+    0 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0  transparent, 0 9px 0 transparent,
+    0 10px 0, rgba(0, 0, 0, 0.3);
+    animation: bounce 4s ease infinite alternate;
+}
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 0.10s;
+}
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc,
+        0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc,
+        0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+        0 60px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+       </style>
+    </head>
+    <body>
+        <h1>
+           <span>H</span>
+           <span>E</span>
+           <span>L</span>
+           <span>L</span>
+           <span>O</span>
+           <span>!</span>
+        </h1>
+    </body>
 </html>
